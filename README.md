@@ -1,3 +1,7 @@
+# Overview
+
+VBox VM setup script - Create VM and install OS with single command
+
 # Build 
 ## Requirements
 
