@@ -1,0 +1,17 @@
+vbox-manage:
+general:
+  name: "AnsibleTest2"
+  iso-file-path: D:/piotr/2021_02_13-Linux-Image/lubuntu-18.04.5-desktop-amd64.iso
+create:
+  predefined:
+    vms-home: D:\piotr\2021-02_13-VirtualBox\VirtualMachines
+    nat-rule: "guestssh,tcp,127.0.0.1,22,10.0.2.15,22"
+install:
+  predefined:
+    full-user-name: "test"
+    credentials:
+      user: "test"
+      password: "test123"
+    # post-install-command: "sudo fuser -v -k /var/cache/debconf/config.dat; sudo apt-get update; sudo apt-get -y -f install openssh-server'"
+    # post-install-command: "bash -l -c 'apt-get update; apt-get -y -f install openssh-server'"
+    post-install-command: "sudo rm /var/cache/debconf/config.dat; sudo apt-get update; sudo apt-get -y -f install openssh-server'"
