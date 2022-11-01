@@ -53,7 +53,7 @@ install:
     credentials:
       user: "test"
       password: "test123"
-    post-install-command: "sudo apt-get update || sudo apt-get install openssh-server"
+    post-install-command: "bash -l -c 'sudo apt-get update; sudo apt-get install openssh-server'"
 ```
 
 `raw` section - this is for flexibility. Based on VirtualBox documentation: https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html#vboxmanage-cmd-overview
@@ -84,7 +84,7 @@ install:
     credentials:
       user: "test"
       password: "test123"
-    post-install-command: "sudo apt-get update || sudo apt-get install openssh-server"
+    post-install-command: "bash -l -c 'sudo apt-get update; sudo apt-get install openssh-server'"
 ```
 
 ## configuration - all available options
