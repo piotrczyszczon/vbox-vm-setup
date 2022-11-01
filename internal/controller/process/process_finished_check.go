@@ -1,11 +1,11 @@
 package process
 
 import (
-	"create-vbox-vm/internal/controller/process/timeout"
 	"fmt"
 	"github.com/rs/zerolog/log"
 	"os/exec"
 	"time"
+	"vbox-vm-setup/internal/controller/process/timeout"
 )
 
 type CurrentTimeFunc func() time.Time

@@ -1,10 +1,10 @@
 package scenario
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
-	"create-vbox-vm/internal/controller/vbox/common/scenario/raw"
-	"create-vbox-vm/internal/controller/vbox/install/scenario/predefined"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
+	"vbox-vm-setup/internal/controller/vbox/common/scenario/raw"
+	"vbox-vm-setup/internal/controller/vbox/install/scenario/predefined"
 )
 
 type InstallScenarioProviderFacade interface {

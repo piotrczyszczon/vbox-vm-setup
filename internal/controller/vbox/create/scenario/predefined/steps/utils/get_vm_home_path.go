@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
 	"fmt"
+	"vbox-vm-setup/internal/controller/configuration"
 )
 
 func GetVmHomePath(configuration configuration.Configuration) string {

@@ -1,10 +1,10 @@
 package command
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/process"
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
-	"create-vbox-vm/internal/controller/vbox/common/command/utils"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/process"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
+	"vbox-vm-setup/internal/controller/vbox/common/command/utils"
 )
 
 type VBoxCommandExecutor interface {

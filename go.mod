@@ -1,4 +1,4 @@
-module create-vbox-vm
+module vbox-vm-setup
 
 go 1.19
 

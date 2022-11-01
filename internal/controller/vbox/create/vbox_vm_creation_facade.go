@@ -1,9 +1,9 @@
 package create
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/common/command"
-	"create-vbox-vm/internal/controller/vbox/create/scenario"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/common/command"
+	"vbox-vm-setup/internal/controller/vbox/create/scenario"
 )
 
 type VBoxVmCreationFacade interface {

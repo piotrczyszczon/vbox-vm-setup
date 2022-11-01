@@ -1,10 +1,10 @@
 package vbox
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/create"
-	"create-vbox-vm/internal/controller/vbox/install"
 	"github.com/rs/zerolog/log"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/create"
+	"vbox-vm-setup/internal/controller/vbox/install"
 )
 
 type VBoxVmSetup interface {

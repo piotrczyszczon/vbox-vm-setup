@@ -1,8 +1,8 @@
 package command
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
 )
 
 type VBoxScenarioExecutor interface {

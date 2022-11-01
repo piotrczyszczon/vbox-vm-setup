@@ -1,9 +1,9 @@
 package configuration
 
 import (
-	"create-vbox-vm/internal/controller/commons"
 	"fmt"
 	"github.com/rs/zerolog/log"
+	"vbox-vm-setup/internal/controller/commons"
 )
 
 const DEFAULT_CONFIGURATION_FILE_NAME = "config.yml"

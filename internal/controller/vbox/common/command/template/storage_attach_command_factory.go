@@ -1,8 +1,8 @@
 package template
 
 import (
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
-	"create-vbox-vm/internal/controller/vbox/common/command/template/argument"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
+	"vbox-vm-setup/internal/controller/vbox/common/command/template/argument"
 )
 
 type StorageAttachCommandFactory struct {

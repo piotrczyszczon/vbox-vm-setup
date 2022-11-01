@@ -1,11 +1,11 @@
 package predefined
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
-	"create-vbox-vm/internal/controller/vbox/common/command/template"
-	"create-vbox-vm/internal/controller/vbox/install/scenario/predefined/steps"
 	"github.com/rs/zerolog/log"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
+	"vbox-vm-setup/internal/controller/vbox/common/command/template"
+	"vbox-vm-setup/internal/controller/vbox/install/scenario/predefined/steps"
 )
 
 var VBOX_COMMAND_FACTORY_LIST = []template.VBoxManageCommandFactory{

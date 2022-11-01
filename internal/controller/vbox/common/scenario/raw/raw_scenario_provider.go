@@ -1,9 +1,9 @@
 package raw
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/vbox/common/command/ds"
 	"github.com/rs/zerolog/log"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/vbox/common/command/ds"
 )
 
 type RawScenarioProvider interface {

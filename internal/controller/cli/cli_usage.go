@@ -1,9 +1,9 @@
 package cli
 
 import (
-	"create-vbox-vm/internal/controller/commons"
 	"fmt"
 	"os"
+	"vbox-vm-setup/internal/controller/commons"
 )
 
 func cliPrintUsage() {

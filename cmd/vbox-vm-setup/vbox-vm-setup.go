@@ -1,12 +1,12 @@
 package main
 
 import (
-	"create-vbox-vm/internal/controller/cli"
-	"create-vbox-vm/internal/controller/configuration"
-	"create-vbox-vm/internal/controller/logging"
-	"create-vbox-vm/internal/controller/vbox"
 	"github.com/rs/zerolog/log"
 	"os"
+	"vbox-vm-setup/internal/controller/cli"
+	"vbox-vm-setup/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/logging"
+	"vbox-vm-setup/internal/controller/vbox"
 )
 
 var cliArgumentsReader = cli.NewCliArgumentsReader()

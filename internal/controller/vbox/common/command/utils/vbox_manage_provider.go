@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"create-vbox-vm/internal/controller/configuration"
+	"vbox-vm-setup/internal/controller/configuration"
 )
 
 type VBoxManageProvider interface {
