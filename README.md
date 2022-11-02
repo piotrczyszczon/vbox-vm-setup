@@ -53,7 +53,7 @@ install:
     credentials:
       user: "test"
       password: "test123"
-    post-install-command: "bash -l -c 'sudo apt-get update; sudo apt-get install openssh-server'"
+    post-install-command: "apt-get install openssh-server"
 ```
 
 `raw` section - this is for flexibility. Based on VirtualBox documentation: https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html#vboxmanage-cmd-overview
@@ -84,7 +84,7 @@ install:
     credentials:
       user: "test"
       password: "test123"
-    post-install-command: "bash -l -c 'sudo apt-get update; sudo apt-get install openssh-server'"
+    post-install-command: "apt-get install openssh-server"
 ```
 
 ## configuration - all available options
@@ -121,6 +121,14 @@ create:
     # When provided it will configure port forwarding as specified - default: emty
     # example - Forward port 22 to Host: guestssh,tcp,127.0.0.1,22,10.0.2.15,22
     nat-rule:
+    # VBox shared folder definition
+    shared-folder:
+      # VBox wide folder name
+      name: "MySharedFolderTest"
+      # Path on host file system
+      host-path: "D:/piotr/2021-02_13-VirtualBox/shared_place"
+      # Path on guest file system - it has to be absolute path
+      auto-mount-point: "/mnt/mysharedfolder"
   raw:
     # Commands to execute after predefined image is created
     commands:

@@ -18,18 +18,25 @@ type Create struct {
 }
 
 type PredefinedCreate struct {
-	VmsHome            string `yaml:"vms-home"`
-	OsType             string `yaml:"os-type" default:"Ubuntu_64"`
-	Cpus               string `yaml:"cpus" default:"1"`
-	Memory             string `yaml:"memory" default:"2048"`
-	VirtualMemory      string `yaml:"virtual-memory" default:"128"`
-	GraphicsController string `yaml:"graphics-controller" default:"vmsvga"`
-	RtcUseUtc          string `yaml:"rtc-use-utc" default:"on"`
-	ClipboardMode      string `yaml:"clipboard-mode" default:"bidirectional"`
-	DragAndDrop        string `yaml:"drag-and-drop" default:"bidirectional"`
-	Pae                string `yaml:"pae" default:"off"`
-	HddSize            string `yaml:"hdd-size" default:"10240"`
-	NatRule            string `yaml:"nat-rule" default:""`
+	VmsHome            string       `yaml:"vms-home"`
+	OsType             string       `yaml:"os-type" default:"Ubuntu_64"`
+	Cpus               string       `yaml:"cpus" default:"1"`
+	Memory             string       `yaml:"memory" default:"2048"`
+	VirtualMemory      string       `yaml:"virtual-memory" default:"128"`
+	GraphicsController string       `yaml:"graphics-controller" default:"vboxsvga"`
+	RtcUseUtc          string       `yaml:"rtc-use-utc" default:"on"`
+	ClipboardMode      string       `yaml:"clipboard-mode" default:"bidirectional"`
+	DragAndDrop        string       `yaml:"drag-and-drop" default:"bidirectional"`
+	Pae                string       `yaml:"pae" default:"off"`
+	HddSize            string       `yaml:"hdd-size" default:"10240"`
+	NatRule            string       `yaml:"nat-rule" default:""`
+	SharedFolder       SharedFolder `yaml:"shared-folder" default:""`
+}
+
+type SharedFolder struct {
+	Name           string `yaml:"name"`
+	HostPath       string `yaml:"host-path"`
+	AutoMountPoint string `yaml:"auto-mount-point"`
 }
 
 type Raw struct {

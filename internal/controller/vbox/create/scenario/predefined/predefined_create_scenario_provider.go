@@ -19,6 +19,7 @@ var VBOX_COMMAND_FACTORY_LIST = []template.VBoxManageCommandFactory{
 	steps.NewModifyVmDragAndDropCommandFactory(),
 	steps.NewModifyVmPaeCommandFactory(),
 	steps.NewModifyVmNatRuleCommandFactory(),
+	steps.NewSharedfolderCommandFactory(),
 	steps.NewStorageCtlSataCommandFactory(),
 	template.NewCreatMediumCommandFactory(),
 	steps.NewStorageAttachHddCommandFactory(),

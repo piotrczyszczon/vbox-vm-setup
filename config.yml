@@ -5,13 +5,15 @@ general:
 create:
   predefined:
     vms-home: D:\piotr\2021-02_13-VirtualBox\VirtualMachines
-    nat-rule: "guestssh,tcp,127.0.0.1,22,10.0.2.15,22"
+    nat-rule: "guestssh,tcp,127.0.0.2,22,10.0.2.15,22"
+    shared-folder:
+      name: "MySharedFolderTest"
+      host-path: "D:/piotr/2021-02_13-VirtualBox/shared_place"
+      auto-mount-point: "/mnt/mysharedfolder"
 install:
   predefined:
     full-user-name: "test"
     credentials:
       user: "test"
       password: "test123"
-    # post-install-command: "sudo fuser -v -k /var/cache/debconf/config.dat; sudo apt-get update; sudo apt-get -y -f install openssh-server'"
-    # post-install-command: "bash -l -c 'apt-get update; apt-get -y -f install openssh-server'"
-    post-install-command: "sudo rm /var/cache/debconf/config.dat; sudo apt-get update; sudo apt-get -y -f install openssh-server'"
+    post-install-command: ""
