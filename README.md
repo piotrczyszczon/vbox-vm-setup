@@ -2,6 +2,13 @@
 
 VBox VM setup script - Create VM and install OS with single command
 
+## Quick help
+
+VBox does not support silent install for every OS. If you receive some errors or the result will be kind of unexpected it would be good to check if for your ISO file is supported by VBox unattended install... It can be checked in VirtualBox app like blow:
+
+![image](https://user-images.githubusercontent.com/62462151/200083625-b081d7e7-4ec6-4ab8-a11c-a013b07f5fd7.png)
+
+
 # Build 
 ## Requirements
 
