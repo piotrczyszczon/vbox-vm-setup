@@ -159,3 +159,22 @@ install:
         args:
           - 
 ```
+
+# Tips
+
+## Unattended Tempaltes
+It turned out that VBoxManage is not the greatest tool... and it has some drawbacks
+
+It's often better to modify "UnattendedTemplates" @see: `C:\Program Files\Oracle\VirtualBox\UnattendedTemplates`
+instead of using `post-install-command`
+
+eg. to install ssh server it may be useful to pust there something like 
+```
+log_command_in_target apt-get -y install openssh-server
+```
+
+## Sudo privileges - LUbuntu
+
+to have sudo privileges on Ubuntu OS we can use `post-install-command` like below:
+`chroot /target usermod -a -G sudo test`
+
