@@ -20,10 +20,8 @@ func newSharedfolderCommandFactory(sharedfolderAddCommandFactory template.Shared
 
 func (factory SharedfolderCommandFactory) CreateCommand(configuration configuration.Configuration) *ds.VBoxManageCommand {
 	if len(configuration.Create.Predefined.SharedFolder.Name) > 0 {
-		sharedFolderName := configuration.General.Name + configuration.Create.Predefined.SharedFolder.Name
-
 		return factory.sharedfolderAddCommandFactory.CreateCommand(
-			sharedFolderName,
+			configuration.Create.Predefined.SharedFolder.Name,
 			configuration.Create.Predefined.SharedFolder.HostPath,
 			configuration.Create.Predefined.SharedFolder.AutoMountPoint,
 			configuration,

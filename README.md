@@ -131,11 +131,11 @@ create:
     # VBox shared folder definition
     shared-folder:
       # VBox wide folder name
-      name: "MySharedFolderTest"
+      name: 
       # Path on host file system
-      host-path: "D:/piotr/2021-02_13-VirtualBox/shared_place"
+      host-path: 
       # Path on guest file system - it has to be absolute path
-      auto-mount-point: "/mnt/mysharedfolder"
+      auto-mount-point: 
   raw:
     # Commands to execute after predefined image is created
     commands:
@@ -169,7 +169,7 @@ install:
 
 # Tips
 
-## Unattended Tempaltes
+## Unattended Templates
 It turned out that VBoxManage is not the greatest tool... and it has some drawbacks
 
 It's often better to modify "UnattendedTemplates" @see: `C:\Program Files\Oracle\VirtualBox\UnattendedTemplates`
@@ -183,5 +183,9 @@ log_command_in_target apt-get -y install openssh-server
 ## Sudo privileges - LUbuntu
 
 to have sudo privileges on Ubuntu OS we can use `post-install-command` like below:
-`chroot /target usermod -a -G sudo test`
+`chroot /target usermod -a -G sudo <user_name>`
 
+## Automount folder permissions
+
+VBox automount will create shared folder on your guest OS with permissions 770. If you would like to grant read permission for other user, you can do it eg. by manual mount:
+`sudo mount -t vboxsf <shared_folder_name> /<guest_path>`
